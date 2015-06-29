@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 
 gulp.task('browserify', function() {
     return browserify([
-        './app/src/js/components/questForm.js'
+        './app/src/js/components/app.js'
         ])
         .transform(babelify)
         .bundle()

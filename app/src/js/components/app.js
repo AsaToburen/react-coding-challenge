@@ -15,7 +15,7 @@ var questions = [{
 var RecentQuest = React.createClass({
 
 render: function(){
-console.log(this.props.questions);
+
     var that = this;
     return (
         <aside>
@@ -43,11 +43,13 @@ var QuestForm = React.createClass({
             getQuestion: function(e) {
                 e.preventDefault();
                 var newQuest = this.refs.newQuest.getDOMNode().value;
-            
+                var newEmail = this.refs.newEmail.getDOMNode().value;
+
                 if (isNaN(newQuest)) {
                     this.refs.QuestForm.getDOMNode().reset();
 
-                    questions.push({
+                    questions.unshift({
+                        "email": newEmail,
                         "question": newQuest
                     });
 
@@ -68,7 +70,7 @@ render: function() {
                 </div>
                 <form ref="QuestForm" onSubmit={this.getQuestion}>
                     <textarea ref="newQuest" className="QuestForm-textarea" type="text" placeholder="How can I help?" />
-                    <input className="QuestForm-email" type="email" placeholder="Enter your email" />
+                    <input ref="newEmail" className="QuestForm-email" type="email" placeholder="Enter your email" />
                     <div className="QuestForm-status">
                         <i><img src="./dist/images/green-icon.png"/></i>
                         <p>Darrell is in and answering questions now!</p>
@@ -82,17 +84,7 @@ render: function() {
 })
 
 
-React.render(<QuestForm questions={questions}></QuestForm>, document.getElementById('main-content'));
-
-
-
-
-
-
-
-
-
-
+React.render(<QuestForm questions={questions}></QuestForm>, document.getElementById('form'));
 
 
 
