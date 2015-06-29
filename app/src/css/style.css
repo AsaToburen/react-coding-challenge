@@ -1,0 +1,206 @@
+/* Variables */
+/* Mixins */
+/* Global Styles */
+html,
+body {
+  background-color: #F7F7F7;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  height: 4em;
+  padding-bottom: 1em;
+}
+header img {
+  height: 6em;
+  margin-top: -1em;
+}
+
+div.navy-bg {
+  background-color: #043F50;
+  height: 22em;
+  border-bottom: 4px solid #62B7D0;
+}
+
+section.main-content {
+  margin-bottom: 20em;
+}
+section.main-content div div.content-wrapper {
+  width: 32em;
+  margin: -22.3em auto;
+}
+section.main-content div div.content-wrapper div.main-heading {
+  text-align: left;
+  color: #fff;
+  padding-left: 1em;
+  padding-bottom: 1.5em;
+}
+section.main-content div div.content-wrapper div.main-heading h1 {
+  font-size: 3.4em;
+  margin-bottom: .2em;
+  margin-left: 0;
+}
+section.main-content div div.content-wrapper div.main-heading h3 {
+  line-height: 1.4em;
+}
+
+div#QuestForm {
+  background-color: #F0F0F0;
+  padding: 1.5em;
+  border-radius: 4px;
+  border-bottom: 1px solid #dedede;
+}
+div#QuestForm form {
+  margin: 0;
+  padding: 0;
+  height: 15em;
+}
+div#QuestForm form textarea {
+  font-size: 1em;
+  width: 94%;
+  height: 4em;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+div#QuestForm form input {
+  font-size: 1em;
+  width: 97%;
+  padding-left: 1em;
+  height: 2.5em;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
+}
+div#QuestForm form div.QuestForm-status {
+  float: left;
+}
+div#QuestForm form div.QuestForm-status i {
+  padding: .5em;
+  background-color: #fff;
+  border: 1px solid grey;
+  float: left;
+  border-radius: 3px;
+}
+div#QuestForm form div.QuestForm-status img {
+  height: 25px;
+  position: relative;
+  top: .2em;
+}
+div#QuestForm form div.QuestForm-status p {
+  display: inline-block;
+  color: #00C200;
+  width: 69%;
+  text-align: left;
+  margin-top: .3em;
+  margin-left: -1.5em;
+}
+div#QuestForm form button {
+  float: right;
+  width: 7em;
+  height: 2.2em;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #E86301;
+  font-size: 1.2em;
+  letter-spacing: .05em;
+}
+
+aside {
+  float: right;
+  background-color: #F0F0F0;
+  margin-top: 11em;
+  margin-right: 8.5em;
+  padding: 1em;
+  width: 9em;
+  border-radius: 4px;
+}
+aside h2 {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-size: 1.5em;
+  color: #043F50;
+}
+aside ul.RecentQuest-list {
+  height: 35em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 .5em 0 0;
+}
+aside ul.RecentQuest-list li {
+  height: auto;
+  margin: 2em 0;
+}
+aside ul.RecentQuest-list li:first-child {
+  margin-top: 0;
+}
+aside ul.RecentQuest-list li div {
+  background-color: #fff;
+  border: 1px solid grey;
+  line-height: 1.5em;
+  text-align: left;
+  padding: .5em;
+  margin: .2em 0;
+  height: auto;
+}
+aside ul.RecentQuest-list li a {
+  float: right;
+  color: #E86301;
+  display: block;
+}
+
+div.content-wrapper {
+  color: #043F50;
+}
+div.content-wrapper p.caption {
+  padding-left: 1.5em;
+  letter-spacing: .02em;
+  text-align: left;
+  font-size: 1em;
+  width: 88%;
+  margin-bottom: 4em;
+}
+div.content-wrapper div.content-area {
+  margin-bottom: 2em;
+  padding-left: 1.5em;
+  text-align: left;
+}
+div.content-wrapper div.content-area h2 {
+  margin: .5em 0;
+}
+div.content-wrapper div.content-area p {
+  font-size: 1em;
+}
+
+footer {
+  margin-top: 38em;
+  background-color: #fff;
+  border-top: 5px solid #043F50;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1.4em;
+}
+footer li + li:before {
+  content: "|";
+  padding: 0 1em;
+}
+footer li {
+  display: inline-block;
+}
+footer li:before {
+  font-size: .7em;
+  color: #dedede;
+}
+footer li a {
+  text-decoration: none;
+  color: #043F50;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

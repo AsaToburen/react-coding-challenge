@@ -1,0 +1,222 @@
+/* Variables */
+
+$primaryFont: "Trebuchet MS",
+Helvetica,
+sans-serif;
+$primaryColor: #F7F7F7;
+$secondaryColor: #043F50;
+$orange: #E86301;
+$green: #00C200;
+$border-color: #62B7D0;
+$formGrey: #F0F0F0;
+
+
+/* Mixins */
+
+@mixin addSeparator($element, $separator, $padding) {
+    #{$element+'+'+$element}:before {
+        content: $separator;
+        padding: 0 $padding;
+    }
+}
+/* Global Styles */
+
+html,
+body {
+    background-color: $primaryColor;
+    font-family: $primaryFont;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    height: 4em;
+    padding-bottom: 1em;
+    img {
+        height: 6em;
+        margin-top: -1em;
+    }
+}
+
+div.navy-bg {
+    background-color: $secondaryColor;
+    height: 22em;
+    border-bottom: 4px solid $border-color;
+}
+
+section.main-content {
+    margin-bottom: 20em;
+    div {
+        div.content-wrapper {
+            width: 32em;
+            margin: -22.3em auto;
+            div.main-heading {
+                text-align: left;
+                color: #fff;
+                padding-left: 1em;
+                padding-bottom: 1.5em;
+                h1 {
+                    font-size: 3.4em;
+                    margin-bottom: .2em;
+                    margin-left: 0;
+                }
+                h3 {
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+
+div#QuestForm {
+    background-color: $formGrey;
+    padding: 1.5em;
+    border-radius: 4px;
+    border-bottom: 1px solid #dedede;
+    form {
+        margin: 0;
+        padding: 0;
+        height: 15em;
+        textarea {
+            font-size: 1em;
+            width: 94%;
+            height: 4em;
+            padding: 1em;
+            margin-bottom: 1.5em;
+        }
+        input {
+            font-size: 1em;
+            width: 97%;
+            padding-left: 1em;
+            height: 2.5em;
+            border-radius: 3px;
+            margin-bottom: 1.5em;
+        }
+        div.QuestForm-status {
+            float: left;
+            i {
+                padding: .5em;
+                background-color: #fff;
+                border: 1px solid grey;
+                float: left;
+                border-radius: 3px;
+            }
+            img {
+                height: 25px;
+                position: relative;
+                top: .2em;
+            }
+            p {
+                display: inline-block;
+                color: #00C200;
+                width: 69%;
+                text-align: left;
+                margin-top: .3em;
+                margin-left: -1.5em;
+            }
+        }
+        button {
+            float: right;
+            width: 7em;
+            height: 2.2em;
+            color: #fff;
+            border-radius: 5px;
+            background-color: $orange;
+            font-size: 1.2em;
+            letter-spacing: .05em;
+        }
+    }
+}
+
+aside {
+    float: right;
+    background-color: $formGrey;
+    margin-top: 11em;
+    margin-right: 8.5em;
+    padding: 1em;
+    width: 9em;
+    border-radius: 4px;
+    h2 {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: .5em;
+        font-size: 1.5em;
+        color: $secondaryColor;
+    }
+    ul.RecentQuest-list {
+        height: 35em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 .5em 0 0;
+        li {
+            height: auto;
+            margin: 2em 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            div {
+                background-color: #fff;
+                border: 1px solid grey;
+                line-height: 1.5em;
+                text-align: left;
+                padding: .5em;
+                margin: .2em 0;
+                height: auto;
+            }
+            a {
+                float: right;
+                color: $orange;
+                display: block;
+            }
+        }
+    }
+}
+
+div.content-wrapper {
+    color: $secondaryColor;
+    p.caption {
+        padding-left: 1.5em;
+        letter-spacing: .02em;
+        text-align: left;
+        font-size: 1em;
+        width: 88%;
+        margin-bottom: 4em;
+    }
+    div.content-area {
+        margin-bottom: 2em;
+        padding-left: 1.5em;
+        text-align: left;
+        h2 {
+            margin: .5em 0;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+footer {
+    margin-top: 38em;
+    background-color: #fff;
+    border-top: 5px solid $secondaryColor;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 1.4em;
+    }
+    @include addSeparator('li', '|', 1em);
+    li {
+        display: inline-block;
+        &:before {
+            font-size: .7em;
+            color: #dedede;
+        }
+        a {
+            text-decoration: none;
+            color: $secondaryColor;
+        }
+    }
+}
