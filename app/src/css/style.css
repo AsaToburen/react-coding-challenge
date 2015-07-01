@@ -30,7 +30,7 @@ section#main-content {
   height: 76em;
 }
 section#main-content div.content-wrapper {
-  width: 32em;
+  width: 35em;
   margin: -22.3em auto;
 }
 section#main-content div.content-wrapper div.main-heading {
@@ -49,6 +49,7 @@ section#main-content div.content-wrapper div.main-heading h3 {
 }
 
 form {
+  background-image: url("../assets/images/wall-4-light.png");
   background-color: #F0F0F0;
   padding: 1.5em;
   border-radius: 4px;
@@ -106,11 +107,12 @@ form button {
 
 aside {
   float: right;
+  background-image: url("../assets/images/wall-4-light.png");
   background-color: #F0F0F0;
   margin-top: 11em;
-  margin-right: 15%;
+  margin-right: 21.5%;
   padding: 1em;
-  width: 9em;
+  width: 9.5em;
   border-radius: 4px;
 }
 aside h2 {
@@ -150,7 +152,7 @@ aside ul.RecentQuest-list li a {
 
 div.text-wrapper {
   color: #043F50;
-  width: 32em;
+  width: 35em;
   margin: 23.3em auto;
 }
 div.text-wrapper p.caption {

@@ -42,6 +42,7 @@ header {
 
 div.navy-bg {
     background-color: $secondaryColor;
+
     height: 22em;
     border-bottom: 4px solid $border-color;
 }
@@ -49,7 +50,7 @@ div.navy-bg {
 section#main-content {
     height: 76em;
     div.content-wrapper {
-        width: 32em;
+        width: 35em;
         margin: -22.3em auto;
         div.main-heading {
             text-align: left;
@@ -69,6 +70,7 @@ section#main-content {
 }
 
 form {
+    background-image: url('../assets/images/wall-4-light.png');
     background-color: $formGrey;
     padding: 1.5em;
     border-radius: 4px;
@@ -80,6 +82,7 @@ form {
         height: 4em;
         padding: 1em;
         margin-bottom: 1.5em;
+
     }
     input {
         font-size: 1em;
@@ -126,11 +129,12 @@ form {
 
 aside {
     float: right;
+    background-image: url('../assets/images/wall-4-light.png');
     background-color: $formGrey;
     margin-top: 11em;
-    margin-right: 15%;
+    margin-right: 21.5%;
     padding: 1em;
-    width: 9em;
+    width: 9.5em;
     border-radius: 4px;
     h2 {
         text-align: left;
@@ -170,7 +174,7 @@ aside {
 
 div.text-wrapper {
     color: $secondaryColor;
-    width: 32em;
+    width: 35em;
     margin: 23.3em auto;
     p.caption {
         padding-left: 1.5em;
