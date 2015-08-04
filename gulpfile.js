@@ -74,11 +74,6 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./app/dist/css'));
 });
 
-//gulp.task('jshint', function() {
-//    return gulp.src('app/dist/js/bundle.js')
-//        .pipe(jshint())
-//        .pipe(jshint.reporter('default'));
-//});
 
 gulp.task('scripts', function() {
     gulp.src('./app/dist/**/*.js')
